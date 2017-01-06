@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corBranca">
+    
+    <include 
+        android:id="@+id/includStateNavegation"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_navegation"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/includStateNavegation"
+        android:layout_margin="@dimen/geralMargHorizontalLayout"
+        android:background="@drawable/area_dados_conner"
+        android:orientation="vertical"
+        android:padding="@dimen/geralMargVerticallayout" >
+
+        <RelativeLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/afast_groupo"
+            >
+            <TextView
+                style="@style/textTitel" 
+                android:id="@+id/tituloEstadoCartaMatricula"
+                />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/viewStateProucura"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/afast_groupo">
+
+            <LinearLayout
+	            android:id="@+id/def"
+	            android:orientation="vertical"
+	            style="@style/pointCenter"/>
+	        
+	        <TextView
+	            style="@style/textDescrisionState"
+	            android:layout_alignBottom="@+id/tvStateProucura"
+	            android:text="@string/procura" />
+	        
+	        <TextView 
+	            android:id="@+id/tvStateProcura"
+	            android:layout_toRightOf="@+id/def"
+	            android:layout_alignParentRight="true"
+	            style="@style/textRead"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/viewStateMultas"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/afast_groupo"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+	            android:id="@+id/def"
+	            style="@style/pointCenter"/>
+	        
+	        <TextView
+	            style="@style/textDescrisionState"
+	            android:layout_alignBottom="@+id/tvStateMultas"
+	            android:text="@string/multas" />
+	        
+	        <TextView 
+	            android:id="@+id/tvStateMultas"
+	            android:layout_toRightOf="@+id/def"
+	            android:layout_alignParentRight="true"
+	            style="@style/textRead"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/viewStateGravidade"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/afast_groupo">
+	        
+            <LinearLayout
+	            android:id="@+id/def"
+	            android:orientation="vertical"
+	            style="@style/pointCenter"/>
+	        
+	        <TextView
+	            style="@style/textDescrisionState"
+	            android:layout_alignBottom="@+id/tvStateGravidade"
+	            android:text="@string/gravidade" />
+	        
+	        <TextView 
+	            android:id="@+id/tvStateGravidade"
+	            android:layout_toRightOf="@+id/def"
+	            android:layout_alignParentRight="true"
+	            style="@style/textRead"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/viewStatePrendeCarta"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/afast_groupo"
+            >
+            <LinearLayout
+	            android:id="@+id/def"
+	            android:orientation="vertical"
+	            style="@style/pointCenter"/>
+	        
+	        <TextView
+	            style="@style/textDescrisionState"
+	            android:layout_alignBottom="@+id/tvStateCarta"
+	            android:text="@string/prendeCarta" />
+	        
+	        <TextView 
+	            android:id="@+id/tvStateCarta"
+	            android:layout_toRightOf="@+id/def"
+	            android:layout_alignParentRight="true"
+	            style="@style/textRead"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/viewStatePrendVeiculo"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/afast_groupo"
+            >
+            <LinearLayout
+	            android:id="@+id/def"
+	            android:orientation="vertical"
+	            style="@style/pointCenter"/>
+	        
+	        <TextView
+	            style="@style/textDescrisionState"
+	            android:layout_alignBottom="@+id/tvStateVeiculo"
+	            android:text="@string/prendeVeiculo"/>
+	        
+	        <TextView 
+	            android:id="@+id/tvStateVeiculo"
+	            android:layout_toRightOf="@+id/def"
+	            android:layout_alignParentRight="true"
+	            style="@style/textRead"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/viewStatePrendLivrete"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+            <LinearLayout
+	            android:id="@+id/def"
+	            android:orientation="vertical"
+	            style="@style/pointCenter"/>
+	        
+	        <TextView
+	            style="@style/textDescrisionState"
+	            android:layout_alignBottom="@+id/tvStateLivrete"
+	            android:text="@string/prendeLivrete"/>
+	        
+	        <TextView 
+	            android:id="@+id/tvStateLivrete"
+	            android:layout_toRightOf="@+id/def"
+	            android:layout_alignParentRight="true"
+	            style="@style/textRead"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/afast_groupo" >
+    
+    <LinearLayout
+        android:id="@+id/linlayServerPanelData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+    	android:layout_marginBottom="@dimen/activity_vertical_margin"
+        >
+        
+        <TextView 
+            android:text="@string/server"
+            style="@style/textDescrision"/>
+        
+        <EditText 
+            android:id="@+id/edServerHost"
+            android:hint="@string/server"
+            android:inputType="phone"
+            style="@style/textRead"/>
+        
+        <TextView 
+            android:text="@string/agente"
+            style="@style/textDescrision"/>
+        
+        <EditText
+            android:id="@+id/edServerAgente"
+            android:hint="@string/agente"
+            android:inputType="phone"
+            style="@style/textRead"/>
+        
+        <TextView 
+            android:text="@string/pwd"
+            style="@style/textDescrision"/>
+        
+        <EditText
+            android:id="@+id/edServerAgentePWD"
+            android:hint="@string/agente"
+            android:inputType="phone"
+            android:password="true"
+            style="@style/textRead"/>
+        
+        
+    </LinearLayout>
+    <Button
+        android:id="@+id/btServerRegistrar"
+        android:layout_below="@+id/linlayServerPanelData"
+        style="@style/buttonSubmit"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin"
+    	android:layout_marginTop ="@dimen/afast_groupoDouble"
+        android:text="@string/btServerTextReg"
+        />
+    
+    <TextView
+        android:id="@+id/tvServerState"
+        android:layout_marginTop="@dimen/afast_groupoDouble"
+        android:layout_alignParentBottom="true"
+        android:text="@string/state_registrede"
+        style="@style/textRegisterSuccess"/>
+
+</RelativeLayout>

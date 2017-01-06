@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="def">Default</string>
+    <string name="sync">Atualização</string>
+    <string name="infra">Infrações</string>
+    <string name="condutor">Estado de condutor</string>
+    <string name="carCategory">Categoria de veiculo</string>
+    <string name="poweredBy">Powered by LSTI</string>
+    <string name="app_name">SALAMON</string>
+    <string name="senhasDiferentes">As senhas não se correspondem.</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btServerTextReg">Cadastrar</string>
+    <string name="item_titulo_activity">Dados do Condutor</string>
+    <string name="imei">Mac</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+    <string name="versao">Versao</string>
+    <string name="polegada">Polegada</string>
+    <string name="server">Servidor</string>
+    <string name="agente">Administrador</string>
+    <string name="pwd">Senha</string>
+    <string name="tabServer">Servidor</string>
+    <string name="tabDespositivo">Despositivo</string>
+    <string name="userName">Utilizador</string>
+    <string name="userPwd">Senha</string>
+    <string name="loginEnter">Entrar</string>
+    <string name="title_activity_login">Login</string>
+    <string name="access_deny">Acesso negado.</string>
+    <string name="no_host">Endereço do servidor não definido</string>
+    <string name="no_pwd">Palavra-passe não definida</string>
+    <string name="no_user">Utilizador não definido</string>
+    <string name="no_pwd_update">Palavra passe não alterada</string>
+    <string name="no_user_updade">Utilizador não alterado</string>
+    <string name="state_pendente">Registro de despositivo pendente</string>
+    <string name="btServerTextReValidar">Re-Validar</string>
+    <string name="state_registrede">Novo despositivo registrado</string>
+    <string name="state_noregistrede">Não registrado</string>
+    <string name="stateDriver">Estado</string>
+    <string name="Dados_do_Cartao">Dados do Cartão</string>
+    <string name="existencia">Existência</string>
+    <string name="icompatibility">Incompatibilidade</string>
+    <string name="numeroCarta">Nº de Carta</string>
+    <string name="dataDriver">Dados do Condutor</string>
+    <string name="dataCard">Dados da Carta</string>
+    <string name="dataCar">Dados do Veiculo</string>
+    <string name="categoria">Categoria</string>
+    <string name="livrete">Possui Livrete</string>
+    <string name="matricula">Nº Matricula</string>
+    <string name="nomeCondutor">Nome Condutor</string>
+    <string name="infracao">Infrações</string>
+    <string name="concluir">Concluir</string>
+    <string name="concluirRegistro">Concluir Registro</string>
+    <string name="titulo">Titulo</string>
+    <string name="loginInsertUserName">Insere o nome de accesso!</string>
+    <string name="loginInsertPWD">Insere a palavra passe</string>
+    <string name="veiculo">Veiculo</string>
+    <string name="carta">Carta</string>
+    <string name="aprensao">Apreensão</string>
+
+    <!-- Esse valores sao para a o layout de ativaçao do utilizador e redifinição das senha -->
+    <string name="ativarRazao">Por razões de segurança é necessário que altere a sua senha.</string>
+    <string name="alterPwdText">Alteração da palavra-passe</string>
+    <string name="enterCurrentPwd">Palavra-passe atual</string>
+    <string name="enterNewPwd">Nova senha</string>
+    <string name="enterRepeatNewPwd">Confirme nova palavra-passe</string>
+    <string name="autentic">Autenticar</string>
+    <string name="pwdAlter">Alterar</string>
+    <string name="pwdCansel">Canselar</string>
+    <string name="infracoes">Infrações</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="loginEmptyFields">Informe o utilizador e a palavra-passe.</string>
+    <string name="procura">Procura</string>
+    <string name="estadoVeiculo">Estado Veiculo</string>
+    <string name="estadoEstado">Estado Carta</string>
+    <string name="gravidade">Gravidade</string>
+    <string name="multas">Multas</string>
+    <string name="prendeVeiculo">Veiculo</string>
+    <string name="prendeCarta">Carta</string>
+    <string name="prendeLivrete">Livrete</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+
+</resources>

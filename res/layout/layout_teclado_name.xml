@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background_body_goup"
+    tools:context="policia.transito.Teclado"
+    >
+    
+   
+   <include 
+       android:id="@+id/includTecladoNavegation"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       layout="@layout/item_navegation"/>
+    
+    <EditText
+       
+        android:id="@+id/tvTecladoReadInputText"
+        android:layout_below="@+id/includTecladoNavegation"
+        android:textSize="@dimen/tecladoTextSizeInput"
+        android:layout_toLeftOf="@+id/tecladoNameOkBT"
+        android:layout_marginTop="@dimen/textAfastHorizontal"
+        android:layout_marginBottom="@dimen/textAfastHorizontal"
+        android:layout_marginRight="@dimen/textAfastVertical"
+        android:layout_marginLeft="@dimen/textAfastVertical"
+        android:textStyle="bold"
+	    style="@style/textRead"
+	    />
+    
+    <Button 
+        android:id="@+id/tecladoNameOkBT"
+        android:text="OK"
+        android:layout_below="@+id/includTecladoNavegation"
+        android:layout_alignParentRight="true"
+        style="@style/buttonTecladoAction"
+        android:onClick="onClickOk"
+        />
+    
+    
+    
+        
+</RelativeLayout>

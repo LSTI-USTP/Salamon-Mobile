@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView 
+        android:id="@+id/tvAtiveUserRazao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/alterPwdText"
+        style="@style/banelAtivarRazao" 
+        />
+    
+    <LinearLayout
+        android:id="@+id/llAtiveUserLay1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/distRazaoCredencial"
+        android:layout_below="@+id/tvAtiveUserRazao"
+        style="@style/itemLayout1"
+        >
+        <TextView 
+            android:text="@string/enterCurrentPwd"
+            style="@style/textDescrision"/>
+        
+        <EditText
+            style="@style/pwdRead"
+            android:id="@+id/palavraPasseAtual"/>
+        
+        <TextView 
+            android:text="@string/enterNewPwd"
+            style="@style/textDescrision"/>
+        
+        <EditText
+            style="@style/pwdRead"
+            android:id="@+id/novaPalavraPasse"/>"
+        
+        <TextView
+            android:text="@string/enterRepeatNewPwd"
+            style="@style/textDescrision"/>
+        
+        <EditText
+            style="@style/pwdRead"
+            android:layout_marginBottom="0dp"/>
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/llAtiveUserLay1"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="@dimen/padingButtonVertical"
+        android:paddingLeft="@dimen/padingButtonVertical"
+        >
+        <Button
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+	        android:text="@string/pwdCansel"
+	        style="@style/buttonSubmitSmall"
+	        />
+        
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+	        android:text="@string/pwdAlter"
+	        style="@style/buttonSubmitSmall"
+	        />
+    </RelativeLayout>
+    
+    
+ 
+</RelativeLayout>

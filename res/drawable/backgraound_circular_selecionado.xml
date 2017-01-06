@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    
+    
+    <item >
+        <shape android:shape="oval">
+            <solid android:color="@color/corItemSelecionado"/>
+        </shape>
+    </item>
+    
+    <item android:left="@dimen/circuloBorderFrist"
+        android:right="@dimen/circuloBorderFrist"
+        android:bottom="@dimen/circuloBorderFrist"
+        android:top="@dimen/circuloBorderFrist">
+        <shape android:shape="oval">
+            <solid android:color="@color/corBranca"/>
+        </shape>
+    </item>
+    
+    <item android:left="@dimen/circuloBorderSecond"
+        android:right="@dimen/circuloBorderSecond"
+        android:bottom="@dimen/circuloBorderSecond"
+        android:top="@dimen/circuloBorderSecond"
+        >
+        <shape android:shape="oval">
+            <solid android:color="@color/corItemSelecionado"/>
+        </shape>
+    </item>
+    
+
+</layer-list>

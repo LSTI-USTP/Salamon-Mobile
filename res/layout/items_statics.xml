@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/lilayFiscaDriver"
+        style="@style/areaDados"
+        android:visibility="gone"
+        >
+        <TextView 
+            style="@style/textDescrision"
+            android:layout_width="match_parent"
+            android:text="@string/stateDriver"
+            android:textSize="@dimen/textSubItemsGroup"
+            />
+        <Spinner 
+            android:id="@+id/spnerBodyFiscaDriver"
+            style="@style/spiner"/>
+        
+           <TextView 
+               android:id="@+id/descDriverName"
+            style="@style/textDescrision"
+            android:text="@string/nomeCondutor"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/textSubItemsGroup" />
+    
+          <TextView 
+              android:id="@+id/tvFiscaDriverName"
+             style="@style/textRead"
+             android:inputType="text"
+             android:layout_below="@+id/descDriverName" />
+    </LinearLayout>
+    
+  
+    <LinearLayout
+        android:id="@+id/lilayFiscaCard"
+        style="@style/areaDados"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            >
+            <CheckBox 
+                android:id="@+id/checkBodyExistenciaCarta"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/existencia"
+                android:layout_marginBottom="@dimen/afast_groupo"
+                style="@style/checks"
+                /> 
+            
+            <CheckBox 
+                android:id="@+id/checkBodyCompatibilidade"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/icompatibility"
+                android:layout_marginBottom="@dimen/afast_groupo"
+                style="@style/checks"
+                />
+            
+            <TextView
+                android:id="@+id/def2"
+                style="@style/textSmall"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_alignBottom="@+id/tvFiscaCarta"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/checkBodyExistenciaCarta"
+                android:text="@string/numeroCarta"
+                android:textSize="@dimen/textSubItemsGroup" />
+            
+            <include 
+                android:id="@+id/tvFiscaCarta"
+                style="@style/textRead"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/checkBodyCompatibilidade"
+                android:layout_marginLeft="@dimen/afast_groupo"
+                android:layout_toRightOf="@+id/def2"
+                layout="@layout/item_texticon_rigth"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relayFiscaVeiculo"
+        style="@style/areaDados"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:id="@+id/pr_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/afast_groupo"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_below="@+id/checkFiscasLivreteExist"
+                android:id="@+id/spinnerFiscaCatVeiculo"
+                android:layout_alignParentLeft="true"
+                style="@style/spiner"
+                
+                />
+            
+             <TextView
+                 android:id="@+id/def"
+                 style="@style/textSmall"
+                 android:layout_width="wrap_content"
+                 android:layout_above="@+id/spinnerFiscaCatVeiculo"
+                 android:layout_alignParentLeft="true"
+                 android:text="@string/categoria" 
+                 android:textSize="@dimen/textSubItemsGroup"/>
+             
+              <CheckBox
+                  android:id="@+id/checkFiscasLivreteExist"
+                  style="@style/checks"
+                  android:layout_width="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:text="@string/livrete" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/pr_segu"
+            android:layout_below="@+id/pr_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/pr_text2"
+                style="@style/textSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/matricula"
+                android:layout_marginRight="@dimen/afast_groupo"
+                android:textColor="@color/pretoSobreCinza"
+                android:textSize="@dimen/textSubItemsGroup" />
+
+            <include
+                android:id="@+id/edFiscaNumMatricula"
+                layout="@layout/item_texticon_rigth"/>
+        </LinearLayout>
+    
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

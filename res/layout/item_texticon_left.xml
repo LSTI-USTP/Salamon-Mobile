@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:background="@drawable/border_radios_layout">
+     <LinearLayout 
+          android:id="@+id/imvLoginImageUser"
+          android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_height="wrap_content"
+           android:layout_width="@dimen/larguraIconLogin"
+           android:layout_alignBottom="@+id/edLoginText"
+           android:background="@drawable/border_radios_text_icon"
+           >
+         <ImageView
+            android:id="@+id/imageLoginItem"
+            android:background="@drawable/icon_app"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+     </LinearLayout>
+        
+        <EditText
+            android:id="@+id/edLoginText"
+            android:inputType="phone"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imvLoginImageUser"
+            android:hint="@string/userName"
+            style="@style/stlTvLogin"
+            />
+        
+        
+
+</RelativeLayout>

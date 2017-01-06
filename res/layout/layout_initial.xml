@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="policia.transito.ActivityInitial"
+    android:background="@color/backgraoundApp"
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/def"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/cinzentoArea"
+        android:layout_alignParentTop="true"
+        >
+        
+        <RelativeLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@+id/def01"
+            android:paddingTop="@dimen/textAfastHorizontal"
+	        android:paddingBottom="@dimen/textAfastHorizontal"
+	        android:paddingRight="@dimen/geralMargVerticallayout"
+	        android:paddingLeft="@dimen/geralMargVerticallayout"
+            >
+            <ImageView
+	            android:id="@+id/imageInicialUser"
+	            android:contentDescription="@string/def"
+	            android:padding="@dimen/textAfastVertical"
+	            android:layout_height="@dimen/imageUserAltura"
+	            android:layout_width="@dimen/imageUserLargura"
+	            android:background="@drawable/backgraound_circular_branco"
+	            android:src="@drawable/image_user"
+	            />
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/imageInicialUser"
+	            android:layout_alignTop="@+id/imageInicialUser"
+	            
+	            android:layout_toRightOf="@+id/imageInicialUser"
+	            android:gravity="center_vertical"
+	            android:orientation="vertical"
+	            android:paddingLeft="@dimen/geralMargVerticallayout" >
+	
+	            <TextView
+	                android:id="@+id/telaInicialCodigoAcesso"
+	                style="@style/textDescricionUser"
+	                android:text="@string/def"
+	                android:textStyle="bold"
+	                android:textSize="@dimen/userTextSiseCod"/>
+	            
+	            <TextView
+	                android:text="@string/def"
+	                android:id="@+id/telaInicialNomeUtilizador"
+	                style="@style/textDescricionUser"
+	                android:textSize="@dimen/userTextSiseName"/>
+	        </LinearLayout>
+        </RelativeLayout>
+        
+         <ImageView
+            android:id="@+id/telaInicialTerminarSessao"
+            android:padding="@dimen/textAfastVertical"
+            android:layout_height="@dimen/imageUserAltura"
+            android:layout_width="@dimen/imageUserLargura" 
+            android:layout_centerVertical="true"
+            android:background="@drawable/backgraound_circular_exit"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/def"
+            android:src="@drawable/exit"
+            />
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/def2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/def"
+        android:layout_above="@+id/def3"
+    >
+        <ImageView
+            android:id="@+id/imageInicialDivice"
+            android:contentDescription="@string/def"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+			android:layout_height="@dimen/initialAlturaDivice"
+			android:layout_width="@dimen/initialLarguraDivice"
+			android:src="@drawable/divice_transparente"
+			android:background="@drawable/backgraound_circular_branco"
+	      />
+        
+        <TextView
+	        android:layout_below="@+id/imageInicialDivice"
+	        android:layout_centerHorizontal="true"
+	        android:id="@+id/telaInicialNomeDespositivo"
+	        style="@style/textTitel"
+	        android:textColor="@color/corBranca"
+	        android:text="@string/def"
+	        />
+    </RelativeLayout>
+    
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/def3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:text="@string/def"
+            android:id="@+id/telaInicialTipoOperacao"
+            style="@style/textDescricionInicial"
+            android:layout_width="@dimen/inicialLarguraDescricao1"
+            />
+        
+        <TextView
+            android:text="@string/def"
+            android:id="@+id/telaInicialNivelAtuacao"
+             style="@style/textDescricionInicial"
+             android:layout_width="@dimen/inicialLarguraDescricao2"
+            />
+        <TextView
+            android:text="@string/def"
+            android:id="@+id/telaInicialZona"
+             style="@style/textDescricionInicial"
+             android:background="@color/initialTextColorverde"
+             android:layout_width="@dimen/inicialLarguraDescricao3"
+            />
+        
+        <TextView
+            android:text="@string/poweredBy"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/initialPandingDeveloper"
+            android:paddingBottom="@dimen/initialPandingDeveloper"
+            android:paddingRight="@dimen/textAfastVertical"
+            android:textSize="@dimen/textSiseDeveloper"
+            android:textColor="@color/corBranca"
+            android:textStyle="bold"
+            
+            />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

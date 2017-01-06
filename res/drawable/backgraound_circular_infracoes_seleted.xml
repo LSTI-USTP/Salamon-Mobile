@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <item >
+        <shape android:shape="oval">
+            <solid android:color="@color/corAzulEscuro"/>
+        </shape>
+    </item>
+    
+    <item android:left="@dimen/circuloBorderFrist"
+        android:right="@dimen/circuloBorderFrist"
+        android:bottom="@dimen/circuloBorderFrist"
+        android:top="@dimen/circuloBorderFrist">
+        <shape android:shape="oval">
+            <solid android:color="@color/corBranca"/>
+        </shape>
+    </item>
+    
+</layer-list>

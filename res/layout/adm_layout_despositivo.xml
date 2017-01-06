@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/afast_groupo"
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+        >
+        
+        <TextView 
+            android:text="@string/marca"
+            style="@style/textDescrision"/>
+        
+        <TextView
+            android:id="@+id/tvDiviceMarca"
+            android:text="@string/marca"
+            style="@style/textRead"/>
+        
+        <TextView 
+            android:text="@string/modelo"
+            style="@style/textDescrision"/>
+        
+        <TextView 
+            android:id="@+id/tvDiviceModel"
+            android:text="@string/modelo"
+            style="@style/textRead"/>
+        
+        <TextView 
+            android:text="@string/imei"
+            style="@style/textDescrision"/>
+        
+        <TextView 
+            android:id="@+id/tvDiviceImei"
+            android:text="@string/imei"
+            style="@style/textRead"/>
+        
+        <TextView
+            android:text="@string/versao"
+            style="@style/textDescrision"/>
+        
+        <TextView
+            android:id="@+id/tvDiviceVersion"
+            android:text="@string/versao"
+            style="@style/textRead"/>
+        
+        <TextView 
+            android:text="@string/polegada"
+            style="@style/textDescrision"/>
+        
+        <TextView 
+            android:id="@+id/tvDivicePolegada"
+            android:text="@string/polegada"
+            style="@style/textRead"/>
+        
+    </LinearLayout>
+    
+        
+    <TextView
+        android:id="@+id/tvDiviceState"
+        android:layout_alignParentBottom="true"
+        android:text="@string/state_registrede"
+        style="@style/textRegisterSuccess"/>
+
+</RelativeLayout>

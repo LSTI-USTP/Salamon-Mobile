@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/geralMargHorizontalLayout"
+    android:background="@color/corBranca">
+    <include 
+        android:id="@+id/includInfracaoNavegation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_navegation"/>
+    
+	 <LinearLayout 
+	     android:id="@+id/segundo"
+	     android:layout_alignParentBottom="true"
+	     android:orientation="vertical"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_below="@+id/includInfracaoNavegation">
+         <ExpandableListView
+             android:id="@+id/expandInfracaoInfracoes"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:divider="@color/cinzentoArea"
+             android:dividerHeight="@dimen/dividerAltura"
+             android:childDivider="@color/corBranca"
+             >
+         </ExpandableListView>
+	 </LinearLayout>
+</RelativeLayout>

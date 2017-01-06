@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    
+    <RelativeLayout
+        android:id="@+id/te_um"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fix"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/fix" >
+        
+        <TextView
+	        android:text="Registrado"
+	        android:layout_centerVertical="true"
+	        style="@style/textTitel"
+	        android:textSize="@dimen/faturaTitle"
+	        android:textColor="@color/verdeFaturaCocluido"
+	        />
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/fix"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alturaFormularioFatura"
+        android:layout_margin="@dimen/geralMargVerticallayout"
+        android:background="@drawable/background_body_goup"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+           
+
+            <TextView
+                android:id="@+id/codigo"
+                style="@style/textTitel"
+                android:textSize="@dimen/faturaItems"
+                android:layout_above="@+id/numCartaViatura"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/pretoTextoDescrincao"
+                android:gravity="center"
+                android:layout_margin="@dimen/geralMargVerticallayout"
+                android:text="Codigo" />
+            
+             <TextView
+                android:id="@+id/numCartaViatura"
+                android:textSize="@dimen/faturaItems"
+                android:layout_centerVertical="true"
+                android:textColor="@color/pretoTextoDescrincao"
+                android:text="Matricula/Carta"
+                style="@style/textTitel"
+                android:layout_margin="@dimen/geralMargVerticallayout"
+                android:gravity="center"
+                
+                />
+
+            <TextView
+                android:id="@+id/valorPagar"
+                android:textColor="@color/pretoTextoDescrincao"
+                style="@style/textTitel"
+                android:textSize="@dimen/faturaItems"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/numCartaViatura"
+                android:gravity="center"
+                android:layout_margin="@dimen/geralMargVerticallayout"
+                android:text="900 000 000,00" />
+        
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/inicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/distPadingRazaoVertical"
+        android:layout_alignParentBottom="true"
+        android:text="Inicio"
+        style="@style/buttonSubmitSmall"
+        android:textColor="#fff"/>
+</RelativeLayout>

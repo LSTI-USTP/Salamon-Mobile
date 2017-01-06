@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:state_checked="true">
+         <layer-list>
+             <item 
+                 android:left="@dimen/checkDiferenceMin"
+                 android:bottom="@dimen/checkDiferenceMin"
+                 android:top="@dimen/checkDiferenceMax"
+                 android:right="@dimen/checkDiferenceMax">
+                 <shape android:shape="rectangle">
+                     <size android:width="@dimen/checkLarguraButton"
+                         android:height="@dimen/checkAlturaButton"/>
+                     <solid android:color="@color/corBranca"/>
+                 </shape>
+             </item>
+             <item android:drawable="@drawable/check_true"/>
+		</layer-list>
+     </item>
+     <item android:state_checked="false">
+         <layer-list>
+             <item 
+                 android:left="@dimen/checkDiferenceMin"
+                 android:bottom="@dimen/checkDiferenceMin"
+                 android:top="@dimen/checkDiferenceMax"
+                 android:right="@dimen/checkDiferenceMax">
+                 <shape android:shape="rectangle">
+                     <solid android:color="@color/corBranca"/>
+                 </shape>
+             </item>
+             <item android:drawable="@drawable/check_false"/>
+		</layer-list>
+     </item>
+</selector>

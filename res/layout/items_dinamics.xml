@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/lilayItemSpiner"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:id="@+id/tvItemSpinerValue"
+            style="@style/textSpinner"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lilayItemSpinerValueFAV"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        >
+        
+        <TextView 
+            android:id="@+id/tvItemSpinerValueFAV"
+            android:paddingLeft="@dimen/textAfastVertical"
+            android:paddingRight="@dimen/textAfastVertical"
+ 
+            android:gravity="center"
+            style="@style/textSpinner"
+            android:layout_marginBottom="@dimen/dividerAlturaListView"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lilayItemSpinerValueFavStar"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        >
+        
+        <RatingBar
+            android:id="@+id/tvItemSpinerValueFavStar"
+            android:layout_width="@dimen/favoritsStarDimen"
+            android:layout_height="@dimen/favoritsStarDimen"
+            android:layout_gravity="center"
+            android:max="1"
+            android:numStars="1"
+            android:progress="1"
+             />
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/itemGroupTitle"
+        android:visibility="gone"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    style="@style/groupTitleArea"
+	    >
+        <LinearLayout 
+            android:id="@+id/itemGroupTitelIconEstado"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/backgraound_circular_selecionado"
+            android:layout_height="@dimen/dimensaoCirculos"
+            android:layout_width="@dimen/dimensaoCirculos"/>
+        
+	    <TextView 
+	        android:id="@+id/tvGroupTitle"
+	        android:layout_toLeftOf="@+id/itemGroupTitelIconEstado"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/titulo"
+	        style="@style/groupTitleText"
+	        />
+	 
+	</RelativeLayout>
+	
+    
+     <RelativeLayout
+        android:id="@+id/itemGroupInfacao"
+        android:visibility="gone"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    style="@style/groupTitleArea"
+	    >
+	    <TextView 
+            android:id="@+id/itemGroupInfacaoNumSelecionados"
+            style="@style/textSmallCicle"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/backgraound_circular_infracoes_seleted"/>
+	    
+	    <TextView
+	        android:id="@+id/tvItemGroupInfracaoNome"
+	        android:text="@string/titulo"
+	        android:layout_toLeftOf="@+id/itemGroupInfacaoNumSelecionados"
+	        android:layout_alignParentLeft="true"
+	        style="@style/groupTitleText"
+	        android:layout_centerVertical="true"
+	        />
+	</RelativeLayout>
+	
+     <RelativeLayout
+        android:id="@+id/itemInfracao"
+        android:paddingLeft="@dimen/infracaoAfastamentoEsquerda"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:paddingTop="@dimen/textAfastHorizontal"
+        android:paddingBottom="@dimen/textAfastHorizontal"
+        android:paddingRight="@dimen/textAfastVertical"
+        style="@style/areaCinza"
+        >
+	    
+	    <ImageView
+	        android:id="@+id/itemInfracaoIcon"
+	        android:paddingTop="@dimen/textAfastHorizontal"
+	        android:paddingBottom="@dimen/textAfastHorizontal"
+	        android:layout_alignParentLeft="true"
+	        android:layout_width="@dimen/infracaoIconLargura"
+	        android:layout_height="@dimen/infracaoIconAltura"
+	        android:background="@drawable/inco_peneu1"
+	        />
+	    
+    	<TextView
+    	    android:id="@+id/tvItemInfracao"
+    	    style="@style/infracao"
+    	    android:layout_width="wrap_content"
+    	    android:layout_alignBottom="@+id/itemInfracaoIcon"
+    	    android:layout_alignTop="@+id/itemInfracaoIcon"
+    	    android:layout_toLeftOf="@+id/itemInfracaoNivelGravidade"
+    	    android:layout_toRightOf="@+id/itemInfracaoIcon" />
+    	
+    	<RatingBar
+    	    android:id="@+id/itemInfracaoNivelGravidade"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="@dimen/favoritsStarDimen"
+    	    android:numStars="3"
+    	    android:stepSize="1"
+    	    android:visibility="visible"
+    	    android:layout_alignParentRight="true"
+    	    android:progress="0"
+    	    android:max="3"
+    	    />
+
+    </RelativeLayout>
+      
+     
+    
+    
+</LinearLayout>

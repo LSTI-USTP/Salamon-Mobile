@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <LinearLayout
+                    android:id="@+id/tabHostServer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                     <include 
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        layout="@layout/adm_layout_server"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/tabAtualizacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <include 
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        layout="@layout/layout_atualizacao"/>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/tabHostDespositivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <include 
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        layout="@layout/adm_layout_despositivo"/>
+                </LinearLayout>
+                
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

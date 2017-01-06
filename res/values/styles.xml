@@ -1,0 +1,279 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="itemLayout1">
+        <item name="android:layout_marginRight">@dimen/geralMargVerticallayout</item>
+        <item name="android:layout_marginLeft">@dimen/geralMargVerticallayout</item>
+    </style>
+    
+    <style name="banelBlue">
+        <item name="android:paddingTop">@dimen/distPadingRazaoVertical</item>
+        <item name="android:paddingBottom">@dimen/distPadingRazaoVertical</item>
+        <item name="android:paddingRight">@dimen/distPadingRazaoHorizaotal</item>
+        <item name="android:paddingLeft">@dimen/distPadingRazaoHorizaotal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/corBranca</item>
+        <item name="android:background">@color/corAzulEscuro</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textAtivarRazao</item>
+    </style>
+    
+    <style name="banelAtivarRazao" parent="@style/banelBlue">
+        
+    </style>
+    
+    <style name="textDescrision">
+         <item name="android:layout_width">match_parent</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:textSize">@dimen/tvTextSizeShow</item>
+         <item name="android:textStyle">bold</item>
+         <item name="android:textColor">@color/pretoTextoDescrincao</item>
+    </style>
+    
+    <style name="textDescrisionState" parent="textDescrision">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/textAfastVertical</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_toLeftOf">@+id/def</item>
+    </style>
+    
+    <style name="spiner">
+        <item name="android:padding">2dp</item>
+        <item name="android:background">@drawable/background_box</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="textSpinner" parent="@style/textSmall">
+        <item name="android:paddingTop">@dimen/textAfastHorizontal</item>
+        <item name="android:paddingBottom">@dimen/textAfastHorizontal</item>
+        <item name="android:paddingLeft">@dimen/textAfastVertical</item>
+        <item name="android:background">@drawable/background_spinner_item</item>
+        <item name="android:textColor">@color/txtColorValue</item>
+        <item name="android:textSize">@dimen/textItemSpinner</item>
+    </style>
+    
+    
+    
+    <style name="textRead">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tvTextSizeValue</item>
+        <item name="android:layout_marginBottom">@dimen/afast_groupo</item>
+        <item name="android:background">@drawable/background_box</item>
+        <item name="android:textColor">@color/txtColorValue</item>
+        <item name="android:textColorHint">@color/txtColorHint</item>
+        <item name="android:paddingTop">@dimen/textAfastHorizontal</item>
+        <item name="android:paddingBottom">@dimen/textAfastHorizontal</item>
+        <item name="android:paddingRight">@dimen/textAfastVertical</item>
+        <item name="android:paddingLeft">@dimen/textAfastVertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    
+    <style name="textTitel" parent="@style/textRegisterSuccess">
+        <item name="android:paddingLeft">@dimen/textAfastVertical</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/corAzulEscuro</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/tamanhoTitulo</item>
+    </style>
+    
+    
+    <style name="pointCenter">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    
+    
+    <style name="groupTitleText" parent="@style/textDescrision">
+        <item name="android:textColor">@color/azulCabecalhoTexto</item>
+    </style>
+    
+    <style name="groupTitleArea">
+        <item name="android:paddingTop">@dimen/titleGroupHorizontal</item>
+        <item name="android:paddingBottom">@dimen/titleGroupHorizontal</item>
+        <item name="android:background">@color/corBranca</item>
+        <item name="android:paddingLeft">@dimen/titleGroupVertical</item>
+        <item name="android:paddingRight">@dimen/titleGroupVertical</item>    
+    </style>
+    
+    <style name="infracao" parent="@style/textSmall">
+        <item name="android:textColor">@color/pretoTextoDescrincao</item>
+        <item name="android:paddingLeft">@dimen/textPadindLeftInfracao</item>
+        <item name="android:textSize">@dimen/textSizeInfracao</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="pwdRead" parent="@style/textRead">
+        <item name="android:inputType">phone</item>
+        <item name="android:password">true</item>  
+        <item name="android:hint">@string/pwd</item>          
+    </style>
+    
+    <style name="stlTvLogin" parent="@style/textRead">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_marginBottom">@dimen/afast_groupoDouble</item>
+        <item name="android:background">@drawable/border_none_text</item>
+    </style>
+    
+    <style name="buttonSubmitSmall">
+        <item name="android:layout_width">@dimen/largSmallButtonSubmit</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/btTextSize</item>
+        <item name="android:textColor">@color/corBranca</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">@dimen/padingButtonHorizontal</item>
+        <item name="android:paddingTop">@dimen/padingButtonHorizontal</item>
+        <item name="android:paddingRight">@dimen/padingButtonVertical</item>
+        <item name="android:paddingLeft">@dimen/padingButtonVertical</item>
+        <item name="android:background">@drawable/backgraund_button</item>
+    </style>
+    
+    <style name="buttonSubmit" parent="@style/buttonSubmitSmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    
+    <style name="textRegisterSuccess" parent="@style/buttonSubmit">
+        <item name="android:paddingBottom">@dimen/textAfastHorizontal</item>
+        <item name="android:paddingTop">@dimen/textAfastHorizontal</item>
+        <item name="android:paddingLeft">@dimen/textAfastVertical</item>
+        <item name="android:paddingRight">@dimen/textAfastVertical</item>
+        <item name="android:left">@dimen/textAfastVertical</item>
+        <item name="android:right">@dimen/textAfastVertical</item>
+        <item name="android:top">@dimen/textAfastHorizontal</item>
+        <item name="android:bottom">@dimen/textAfastHorizontal</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/tvTextSizeShow</item>
+    </style>
+    
+    <style name="imageLogo">
+        <item name="android:layout_height">@dimen/dimenImageHeight</item>
+        <item name="android:layout_width">@dimen/dimenImageWidth</item>
+        <item name="android:background">@drawable/background_logo</item>
+    </style>
+    
+    
+    
+    <!-- Estilos a ser aplicado no formulario principal de fiscalizacao -->
+    <style name="areaDados" parent="@style/areaCinza">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/background_body_goup</item>
+        <item name="android:paddingTop">@dimen/padingButtonHorizontal</item>
+        <item name="android:paddingBottom">@dimen/padingButtonHorizontal</item>
+        <item name="android:paddingRight">@dimen/padingButtonVertical</item>
+        <item name="android:paddingLeft">@dimen/padingButtonVertical</item>
+    </style>
+    
+    
+    <style name="areaCinza">
+        <item name="android:background">@drawable/background_body_goup</item>
+    </style>
+    
+    <style name="checks" parent="@style/textSmall">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:button">@drawable/background_checkbox</item>
+        <item name="android:textSize">@dimen/textSubItemsGroup</item>
+    </style>
+    
+    
+    <style name="textSmall" parent="@style/textDescrision">
+        <item name="android:textSize">@dimen/textCheckSize</item>
+    </style>
+    
+    <style name="textSmallCicle">
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:layout_width">@dimen/dimenInfracaoQuandroNum</item>
+        <item name="android:layout_height">@dimen/dimenInfracaoQuandroNum</item>
+        <item name="android:textColor">@color/vermelhoCircular</item>
+    </style>
+    
+    <style name="buttonTeclado" parent="@style/buttonSubmitSmall">
+        <item name="android:layout_height">@dimen/tecladoAltura</item>
+        <item name="android:layout_width">@dimen/tecladoLargura</item>
+        <item name="android:textSize">@dimen/tecladoTextSize</item>
+        <item name="android:layout_margin">@dimen/tecladoMargens</item>
+        <item name="android:padding">@dimen/tecladoPanding</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+    
+    <style name="buttonTecladoAction" parent="@style/buttonTeclado">
+        <item name="android:background">@android:drawable/btn_default</item>
+        <item name="android:textColor">@color/pretoTextoDescrincao</item>
+    </style>
+    
+    <style name="buttonTecladoLetras" parent="@style/buttonTeclado">
+        <item name="android:textSize">@dimen/tecladoTextLetraSize</item>
+        <item name="android:layout_width">@dimen/tecladoLarguraLetra</item>
+        <item name="android:layout_height">@dimen/tecladoAlturaLetra</item>
+    </style>
+    
+    <style name="buttonTecladoFavorito" parent="@style/spiner">
+        <item name="android:layout_marginTop">@dimen/tecladoMargens</item>
+        <item name="android:layout_width">@dimen/larguraButtonFav</item>
+        <item name="android:layout_height">@dimen/tecladoAlturaLetra</item>
+        <item name="android:background">@drawable/backgraund_spinner_favorito</item>
+    </style>
+    
+    <style name="iconApp">
+        <item name="android:layout_width">@dimen/iconesLargura</item>
+        <item name="android:layout_height">@dimen/iconesAltura</item>
+    </style>
+    
+    
+    <!-- ESTILO PARA SER APLICADOS AS AREAS DOS ICONES DE AVANCO E RETROCESSO -->
+    <style name="estiloAreaIconesNavegacao">
+        <item name="android:layout_width">@dimen/largura</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/textAfastVertical</item>
+        
+    </style>
+    
+    
+    
+    <!-- Estidlos a ser aplicados para o textos da tela inicial -->
+    <style name="textDescricionInicial" parent="@style/textTitel">
+        <item name="android:textColor">@color/corBranca</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/initialTextSiseDescricion</item>
+        <item name="android:padding">@dimen/initialTextPandingDescricion</item>
+        <item name="android:layout_marginTop">@dimen/dividerAltura</item>
+        <item name="android:background">@color/initialTextColorverde</item>
+    </style>
+    
+    <style name="textDescricionUser">
+        <item name="android:textSize">@dimen/initialTextSiseDescricion</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/pretoPreto</item>
+    </style>
+    
+  
+</resources>

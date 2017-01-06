@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/corBranca"
+    >
+    <include
+        android:id="@+id/includFiscalizacaoNavegation"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/item_navegation"
+        />
+    
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/def"
+        android:layout_below="@+id/includFiscalizacaoNavegation" />
+    
+    <RelativeLayout
+        android:id="@+id/def"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        >
+
+        <Button
+            android:id="@+id/btFiscaInfracao"
+            android:text="@string/infracao"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            style="@style/buttonSubmitSmall"/>
+
+        <Button
+            android:id="@+id/btFiscaConcluir"
+            android:text="@string/concluir"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            style="@style/buttonSubmitSmall"
+            />
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

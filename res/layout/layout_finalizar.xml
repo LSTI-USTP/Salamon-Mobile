@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height= "match_parent"
+    android:paddingBottom="@dimen/geralMargHorizontalLayout"
+    android:orientation="vertical"
+    android:background="#fff">
+    
+    <include
+        android:id="@+id/includFinalizarNavegation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        layout="@layout/item_navegation"
+        />
+	
+    <ListView
+        android:layout_above="@+id/def2"
+        android:id="@+id/listFinalizarInfracaoSeleted"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/includFinalizarNavegation"
+        />
+    
+    <TextView
+        android:id="@+id/def2"
+        style="@style/textDescrision"
+        android:layout_above="@+id/def1"
+        android:layout_alignLeft="@+id/listFinalizarInfracaoSeleted"
+        android:text="@string/aprensao"
+        android:textColor="@color/corAzulEscuro"
+        android:layout_marginTop="@dimen/textAfastVertical"
+        />
+    
+	<LinearLayout
+	    android:id="@+id/def1"
+	    android:layout_above="@+id/btFinalizarConcluir"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@drawable/background_body_goup"
+	    android:layout_marginBottom="@dimen/textAfastVertical"
+	    >
+	    <LinearLayout 
+	    android:layout_width="200dp"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:paddingLeft="50dp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp">
+	        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/carta"
+                android:id="@+id/finalizarCheckCarta"
+                android:textSize="@dimen/tamanhochechbox"/>
+	        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/veiculo"
+                android:id="@+id/finalizarCheckVeiculo"
+                android:textSize="@dimen/tamanhochechbox"
+                android:layout_marginTop="30dp"
+                android:paddingTop="1dp"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:paddingLeft="200dp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp">
+	        
+	        <CheckBox
+	            
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livrete"
+                android:id="@+id/finalizarCheckLivrete"
+                android:textSize="@dimen/tamanhochechbox"/>
+	        
+	           <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Condutor"
+                android:id="@+id/finalizarCheckCondutor"
+                android:textSize="@dimen/tamanhochechbox"
+                android:layout_marginTop="30dp"
+                android:paddingTop="1dp"/>
+	    </LinearLayout>
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/btFinalizarConcluir"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/concluir"
+        style="@style/buttonSubmitSmall"
+        />
+
+    
+	
+</RelativeLayout>

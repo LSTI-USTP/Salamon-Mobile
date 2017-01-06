@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prim"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/areaNavegationGoBack"
+            style="@style/estiloAreaIconesNavegacao"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/areaNavegationTitle"
+            android:background="@drawable/backgraund_button_navegation"
+            >
+            
+            <ImageView
+                android:id="@+id/activityStateBackNavigation"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/previous_48"
+	            style="@style/iconApp"
+	            />
+        </RelativeLayout>
+        
+	    <TextView
+	        android:id="@+id/areaNavegationTitle"
+	        style="@style/textTitel"
+	        android:layout_toLeftOf="@+id/areaNavegationGoFront"
+	        android:layout_toRightOf="@+id/areaNavegationGoBack"
+	        android:text="Fiscalização" />
+	    
+	    <RelativeLayout
+            android:id="@+id/areaNavegationGoFront"
+            style="@style/estiloAreaIconesNavegacao"
+            android:paddingRight="@dimen/textAfastVertical"
+            android:paddingLeft="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/areaNavegationTitle"
+            android:background="@drawable/backgraund_button_navegation"
+            >
+            
+            <ImageView
+                android:id="@+id/principalGoFront"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/next_36"
+	            style="@style/iconApp"
+	            />
+        </RelativeLayout>
+	</RelativeLayout>
+	<LinearLayout
+	    android:layout_height="@dimen/alturaLinhasNavegacao"
+	    android:layout_width="match_parent"
+	    android:background="@color/cinzentoArea"/>
+</LinearLayout>
